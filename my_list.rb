@@ -5,6 +5,6 @@ class MyList
   end
 
   def each
-    @list.each {|e| yield e if block_given?}
+    @list.each { |e| yield e if block_given? }
   end
-end    
+end

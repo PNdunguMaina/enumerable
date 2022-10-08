@@ -2,7 +2,7 @@ module MyEnumerable
   def all?
     res = false
     each do |e|
-    res = true if yield e
+      res = true if yield e
     end
     res
   end
@@ -10,7 +10,7 @@ module MyEnumerable
   def any?
     res = false
     each do |e|
-    res = true if yield e
+      res = true if yield e
     end
     res
   end
@@ -18,7 +18,7 @@ module MyEnumerable
   def filter?
     my_list = []
     each do |e|
-    my_list.push(e) if yield e
+      my_list.push(e) if yield e
     end
     my_list
   end
@@ -26,4 +26,4 @@ module MyEnumerable
   def show
     puts(@list)
   end
-end    
+end
